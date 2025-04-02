@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulseSequence1 {
+  0%, 100% { opacity: 0.4; }
+  10%, 15% { opacity: 1; }
+  25%, 95% { opacity: 0.4; }
+}
+
+@keyframes pulseSequence2 {
+  0%, 100% { opacity: 0.4; }
+  35%, 40% { opacity: 1; }
+  50%, 95% { opacity: 0.4; }
+}
+
+@keyframes pulseSequence3 {
+  0%, 100% { opacity: 0.4; }
+  60%, 65% { opacity: 1; }
+  75%, 95% { opacity: 0.4; }
+}
+
+.blob-pulse-1 {
+  animation: pulseSequence1 3s ease-in-out infinite;
+}
+
+.blob-pulse-2 {
+  animation: pulseSequence2 3s ease-in-out infinite;
+}
+
+.blob-pulse-3 {
+  animation: pulseSequence3 3s ease-in-out infinite;
+}
